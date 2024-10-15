@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkslategrey;
+}
+
+.album {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 45px;
+    perspective: 1000px;
+}
+
+.page {
+    width: 35rem;
+    height: 35rem;
+    padding: 2px;
+    background-color: white;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.album img {
+    width: 100%;
+    height: 100%;
+}
+
+.flip-left {
+    transform: rotateY(-180deg);
+}
+
+.flip-right {
+    transform: rotateY(180deg);
+}
+
+.buttons {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.buttons-container {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttons-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.buttons-container #button {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: none;
+}
